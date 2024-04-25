@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Stylish:400');
+/* 전체관리 영역(루트영역: 뿌리영역 */
+*{font-family: ; font-size: ;}
+html{box-sizing: ;margin: ;padding: ;}/*-영역*/
+/*ROOT*/
+:root {
+    /*bgcolor*/
+    --bg-color1:#7D4941;
+    --bg-color2:#FBF3E8;
+    --bg-color3:#F06226;
+    --bg-color4:#91C777;
+    --bg-color5:#866738;
+    /*color*/
+    --font-color1: #303030;
+}
+
+/* 전체중 배경 */
+body{
+    background-image: url(./img/bg.png);
+    font-family: 'Stylish', 맑은 고딕, arial;;
+    font-size: 1.8rem;
+    color:rgb(83, 68, 31)
+}
+header{
+    width: 100%;
+    margin: 1rem auto;
+    /*
+    margin: 0; - 상하좌우 전부 0값
+    margin: 0 auto; - 상하는0, 좌우는 auto
+    margin: 0 auto 40px; - 상0, 좌우는 auto, 하40px
+    margin: 0 auto 20px 40px; - 상 0 우 0 하 20px 왼 40px
+    */
+
+}
+/* 머릿단 */
+header h1{
+    /* margin-top: 50px; */
+    padding: 2rem auto 2rem auto;
+    text-align: center;
+    padding: 2rem auto;
+}
+/* img apan, input: ............. */
+
+header h1 .logo{
+    padding: 2rem;
+}
+
+header .gnb ul{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(197, 193, 128, 0.3);
+    border-top: 1px solid olive;
+    border-bottom: 1px solid olive;
+    padding: .5rem 0 .5rem;
+
+}
+header li{
+    padding:0 1.5rem;
+    text-shadow: 2px 2px 2px rgb(163, 162, 162);
+    font-weight: 550;
+    color: olive;
+    }
+
+header li:hover{
+        padding:0 1.5rem;
+        color:#9fa129;
+    
+        }
+        /* 반응형을 위한 미디어 스크린 구간 */
+        /* 바닥단 */
+main{    
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgb(197, 194, 128);
+    padding: 4rem;
+    margin-bottom: 2rem;}
+.hero{    margin-bottom: 2.4rem;}
+.hero h2{
+    font-size: 2em;
+    font-weight: 550;
+    color: rgb(197, 194, 128);
+    margin-bottom: 1rem;
+}
+.hero p{
+    background-color: #91C777;
+    padding:.8rem;
+    width:400px;
+    border-radius: 0px 30px 30px 30px;
+
+}
+.hero time{
+    color:var(--bg-color2);;
+}
+footer{
+    background-color: var(--bg-color1);
+    color: var(--bg-color2);
+    text-align: center;
+    padding: .9rem 0.5rem 1.5rem;
+    /* void funtion:함수 var:변수  */
+}
+figure{
+    padding:1em;
+}
+article{
+    margin-bottom: 1.6rem;
+}
+article h3{
+    border-bottom: 3px dashed #90c7779c;
+    background-image: url(./img/h2_icon.png);
+    background-repeat: no-repeat;
+    /* background-size: 80%; */
+    font-size: 1.2em;
+    color:rgb(171, 199, 106);
+    margin-bottom: 1.5rem;
+    background-position: bottom left;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    height: 56px;
+    margin-top: 2.5rem;
+}
+
+.carrot_a figcaption{
+    text-align: center;
+}
+.carrot{
+    border-radius: 20px 20px 20px 20px;
+}
+    /* height: 80px; */
+
+section{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+article p{
+    font-family: ;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+figcaption{
+    margin-top: 10px;
+    font-size: .6em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+
+}
+
+aside{
+
+}
+aside nav{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgb(197, 194, 128);
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    
+}
+
+aside h4{
+    margin-bottom: 1rem;
+    font-weight: 550;
+    color:rgb(171, 199, 106);
+    font-size: 1.4em;
+}
+
+aside ul{
+    font-size: .6em;
+    font-family:Arial, Helvetica, sans-serif;
+    /* font-weight:bold; */
+}
+
+aside li{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+aside a{
+    color: rgb(95, 91, 22);
+}
+aside a:hover{
+    color: rgb(197, 194, 128);
+}
+aside li:hover{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.lnb{
+
+
+}
+.lnb li{
+    list-style-type:square;
+}
+.lnb a{}
+
+.recent_b ul{
+    overflow:hidden scroll;
+    height:15rem;
+    width:;
+
+}
+.recent_b li{
+    border-bottom: 1px solid  rgb(95, 91, 22);
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+.recent_b{
+    
+}
+
+/*반응형을 위한 미디어 스크린 구간*/
+@media (min-width: 800px) {
+    section{
+        display: flex;
+        justify-content: space-between;/*가로정렬 3가지 left, center, right + 분배정렬 space- around evenly between*/
+    }
+    main{
+        width: 70%;
+    }
+    aside{
+        width: 25%;
+    }
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
